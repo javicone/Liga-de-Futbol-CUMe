@@ -1,0 +1,137 @@
+
+
+/* Desktop View */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .team-details img {
+        width: 90%;
+}
+
+    .team-details img {
+        width: 90%;
+}
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+}
+
+/* Mobile Menu Toggle */
+#menu-toggle.active + #nav-links {
+    display: flex;
+}
+
+footer {
+    background-color: #2c2c2c;
+    padding: 20px;
+    text-align: center;
+}
+
+.colaboradores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los logos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si no hay espacio */
+}
+
+.logo {
+    max-height: 200px;
+    width: auto;
+    transition: transform 0.3s ease; /* Añade un efecto al hacer hover */
+}
+
+/* Sección de equipos */
+.team-section {
+    background-color: #2c2c2c;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; /* Hace que todos los elementos tengan la misma altura */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajuste del logo */
+.team-logo {
+    max-height: 300px; /* Ajusta el logo al alto del contenedor */
+    max-width: 100%; /* Asegúrate de que no se desborde */
+    height: auto; /* Mantiene la proporción */
+    object-fit: contain; /* Asegura que el logo no se deforme */
+    margin-bottom: 15px; /* Añade espacio entre la imagen y el contenido */
+}
+
+/* Detalles del equipo */
+.team-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10%;
+}
+.team-details img {
+    width: 70%;
+}
+
+.team-section h2 {
+    color: #e63946;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-image {
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Cubre el área sin deformarse */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.team-image img{
+    width: 40%;
+}
+
+/* Responsivo: ajuste en pantallas pequeñas */
+@media (max-width: 1100px) {
+    .team-details {
+        flex-direction: column; /* Apila la imagen y el contenido verticalmente */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .team-details img {
+            width: 90%;
+    }
+
+    .team-logo {
+        margin-bottom: 15px; /* Espacio entre imagen y contenido */
+        width: 80%; /* Ajusta el ancho según tus necesidades */
+    }
+
+    .team-section h2 {
+        font-size: 15px; /* Tamaño más pequeño en pantallas pequeñas */
+    }
+
+    .team-image {
+        max-width: 100%; /* Imagen ocupa todo el ancho disponible */
+        height: auto; /* Mantiene la proporción */
+    }
+
+    .colaboradores {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+    }
+
+    .logo {
+        max-width: 100px; /* Los logos serán más pequeños en pantallas pequeñas */
+    }
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}

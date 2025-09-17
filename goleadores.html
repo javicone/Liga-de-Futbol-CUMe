@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación y Próximos Partidos</title>
+    <!-- Importar Google Fonts -->
+    <link rel="icon" href="images/favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<!-- HTML -->
+<nav class="navbar">
+    <div class="logoLiga">
+        <a href="index.html">
+            <img src="images/logoLiga.png" alt="CECUME logo" class="img">
+        </a>
+        <h1><a href="index.html">LA LIGUILLA-TROFEO DEL RECTOR</a></h1>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Menú hamburguesa -->
+    <ul class="nav-links" id="nav-links">
+        <li><a href="estadisticas.html">Jornadas</a></li>
+        <li><a href="goleadores.html">Goleadores</a></li>
+        <li><a href="equipos.html">Equipos</a></li>
+        <li><a href="https://docs.google.com/document/d/17nN21wvRkc8qSKg0Tc7C8Ptf9VyXpkBZ1A3CakU-4Xk/edit?usp=sharing" target="_blank">Bases</a></li>
+    </ul>
+</nav>
+    
+
+    <div class="container">
+        <h2>Goleadores</h1>
+            <table id="tablaGoleadores">
+                <thead>
+                    <tr>
+                        <th>Jugador</th>
+                        <th>Equipo</th>
+                        <th>Goles</th>
+                        <th>  </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se cargarán los datos dinámicamente -->
+                </tbody>
+            </table>
+
+<!-- Footer -->
+<footer>
+    <h2>Colaboradores</h2>
+    <div class="colaboradores">
+        <a href="https://www.cecume.org" target="_blank">
+        <img src="images/cecume.png" alt="CECUME logo" class="logo" href="https://cecume.org/">
+        <a href="https://merida.es/" target="_blank">
+        <img src="images/aytoMerida.png" alt="aytoMerida logo" class="logo" href="https://merida.es/">
+        <a href="https://safyde.unex.es/" target="_blank">
+        <img src="images/safyde.png" alt="safyde logo" class="logo" href="https://safyde.unex.es/" >
+    </div>
+</footer>
+    <script src="scripts/goleadores"></script>
+</body>
+</html>

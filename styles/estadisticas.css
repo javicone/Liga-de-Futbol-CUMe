@@ -1,0 +1,91 @@
+#jornadas-container {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto; /* Centra el contenedor en la página */
+}
+
+.jornada {
+    display: flex; /* Cambiado a flex para alinear contenido */
+    flex-direction: column; /* Coloca elementos uno debajo del otro */
+    align-items: center; /* Centra el contenido dentro de la jornada */
+    background-color: #444;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.jornada-title {
+    font-size: 1.2em; /* Tamaño base del título */
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center; /* Centra el título */
+}
+
+.partido {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px;
+    border-top: 1px solid #555;
+    width: 100%; /* Asegura que el partido ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+.partido:first-child {
+    border-top: none;
+}
+
+.equipo {
+    display: flex;
+    flex-direction: column; /* Cambiado para mostrar escudo encima del nombre */
+    align-items: center; /* Centra horizontalmente el escudo y el nombre */
+    flex: 1; /* Permite que el equipo ocupe el espacio restante */
+    min-width: 0; /* Permite que el texto se ajuste correctamente */
+}
+
+.equipo img {
+    width: 48px; /* Aumenta el tamaño de los logos */
+    height: 48px; /* Mantiene la proporción */
+    margin-bottom: 4px; /* Espacio entre el escudo y el nombre */
+}
+
+.resultado {
+    font-size: 1em; /* Tamaño base del resultado */
+    font-weight: bold;
+    text-align: right; /* Alinea el texto a la derecha */
+    white-space: nowrap; /* Evita que el texto se rompa en múltiples líneas */
+    min-width: 50px; /* Establece un ancho mínimo para el resultado */
+}
+
+.estado {
+    font-size: 0.9em; /* Tamaño del estado */
+    color: #32CD32;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 600px) {
+    .equipo img {
+        width: 36px; /* Reduce el tamaño de los logos en pantallas pequeñas */
+        height: 36px; /* Mantiene la proporción */
+    }
+
+    .jornada-title {
+        font-size: 1em; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    .partido {
+        padding: 8px; /* Reduce el padding de los partidos */
+    }
+
+    .resultado {
+        font-size: 0.8em; /* Reduce el tamaño del resultado en pantallas pequeñas */
+    }
+
+    .estado {
+        font-size: 0.8em; /* Reduce el tamaño del estado en pantallas pequeñas */
+    }
+
+    .jornada {
+        padding: 8px; /* Reduce el padding de la jornada para que se vea más compacto */
+    }
+}

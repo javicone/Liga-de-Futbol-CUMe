@@ -1,0 +1,37 @@
+[
+    {
+        "nombre": "Fachatinaikos",
+        "escudo": "images/Escudos/FachathinaikosTransparen.png",
+        "plantilla": "images/equipos/bl.jpg"
+    },
+    {
+        "nombre": "CablePelao FC",
+        "escudo": "images/Escudos/zavala.jpg",
+        "plantilla": "images/equipos/cpfc.jpg"
+    },
+    {
+        "nombre": "LOS CHICHOS",
+        "escudo": "images/Escudos/LosChichosTrnasparen.png",
+        "plantilla": "images/equipos/chichos.jpeg"
+    },
+    {
+        "nombre": "Unión Deportiva Porreta",
+        "escudo": "images/Escudos/UnionDeportivaPorretaTransparen.png",
+        "plantilla": "images/equipos/udp.jpg"
+    },
+    {
+        "nombre": "I.E. Sala",
+        "escudo": "images/Escudos/IngenierosEnSala.png",
+        "plantilla": "images/equipos/eg.jpg"
+    },
+    {
+        "nombre": "Cum United",
+        "escudo": "images/Escudos/CumUnitedTransparen.png",
+        "plantilla": "images/equipos/cumUtd.jpg"
+    },
+    {
+        "nombre": "Royal Emérita",
+        "escudo": "images/Escudos/RoyalEméritaTransparen.png",
+        "plantilla": "images/equipos/royalMerida.jpeg"
+    }
+]

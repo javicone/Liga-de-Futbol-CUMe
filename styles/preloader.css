@@ -1,0 +1,42 @@
+/* Preloader inicial */
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c2c2c; /* Fondo oscuro */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9998;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 3s ease-in 1.5s, visibility 3s ease 1.5s; /* La transición dura 3 segundos */
+  }
+  
+  /* Imagen del preloader */
+  .preloader img {
+    width: 120px; /* Tamaño de la imagen */
+    height: 120px;
+    animation: spin 3s ease-in infinite ; /* Animación de giro */
+  }
+  
+  /* Animación de giro */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(2160deg);
+    }
+  }
+  
+  /* Ocultar el preloader cuando se cargue la página */
+  .loaded .preloader {
+    opacity: 0; /* Se desvanece */
+    visibility: hidden; /* Después de desvanecerse, deja de ser visible */
+    
+    transition: opacity 1s ease 1.5s, visibility 3s ease 1.5s; /* La transición dura 3 segundos */
+  }
+  

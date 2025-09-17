@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA LIGA DEL CECUME</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/preloader.css">
+    <link rel="stylesheet" href="styles/stylesTeams.css">
+    <link rel="stylesheet" href="styles/estadisticas.css">
+    <link rel="icon" href="images/favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="preloader">
+        <img id="spinner" src="images/logoLiga.png" alt="Cargando..." />
+    </div>
+
+    <nav class="navbar">
+        <div class="logoLiga">
+            <a href="index.html"><img src="images/logoLiga.png" alt="CECUME logo" class="img"></a>
+            <h1><a href="index.html">LA LIGUILLA-TROFEO DEL RECTOR</a></h1>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#main-content">Clasificación</a></li>
+            <li><a href="#jornadas-container">Jornadas</a></li>
+            <li><a href="#tablaProximosPartidos">Proximos Partidos</a></li>
+            <li><a href="#goleadores">Goleadores</a></li>
+            <li><a href="#equipos">Equipos</a></li>
+            <li><a href="https://docs.google.com/document/d/17nN21wvRkc8qSKg0Tc7C8Ptf9VyXpkBZ1A3CakU-4Xk/edit?usp=sharing"
+                    target="_blank">Bases</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="main-content" id="main-content">
+                <br>
+                <br>
+                <h2>Clasificación de la liga</h2>
+                <table id="tablaClasificacion">
+                    <thead>
+                        <tr>
+                            <th>Equipo</th>
+                            <th>Puntos</th>
+                            <th>PJ</th>
+                            <th>PG</th>
+                            <th>PE</th>
+                            <th>PP</th>
+                            <th>GF</th>
+                            <th>GC</th>
+                            <th>DG</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <br>
+                <br>
+                <h2>Próximos Partidos</h2>
+                <table id="tablaProximosPartidos">
+                    <thead>
+                        <tr>
+                            <th>Jornada</th>
+                            <th>Equipo Local</th>
+                            <th>Equipo Visitante</th>
+                            <th>Árbitros</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="sidebar">
+                <h2>Tabla de Goleadores</h2>
+                <table id="goleadores">
+                    <thead>
+                        <tr>
+                            <th>Jugador</th>
+                            <th>Equipo</th>
+                            <th>Goles</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="jornadas-container">
+    </div>
+
+    <div class="container" id="equipos">
+        <h1>Equipos de Fútbol</h1>
+        <div id="teams-container"></div>
+    </div>
+
+    <footer>
+        <h2>Colaboradores</h2>
+        <div class="colaboradores">
+            <a href="https://www.cecume.org" target="_blank"><img src="images/cecume.png" alt="CECUME logo"
+                    class="logo"></a>
+            <a href="https://merida.es/" target="_blank"><img src="images/aytoMerida.png" alt="aytoMerida logo"
+                    class="logo"></a>
+            <a href="https://safyde.unex.es/" target="_blank"><img src="images/safyde.png" alt="safyde logo"
+                    class="logo"></a>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
